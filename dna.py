@@ -8,13 +8,13 @@ import sys
 def main():
 
     # TODO: Check for command-line usage
-    # look in: exit.py
+
     if len(sys.argv) != 3:
         sys.exit("Usage: python dna.py databases/_____.csv sequences/____.txt")
 
     # TODO: Read database file into a variable
     # first command-line argument the name of a CSV file containing the STR counts for a list of individuals
-    # look in: tournament.py
+
     database = []
     first_command_line_argument = sys.argv[1]
     with open(first_command_line_argument, "r") as file:
@@ -24,7 +24,7 @@ def main():
 
     # TODO: Read DNA sequence file into a variable
     # second command-line argument the name of a text file containing the DNA sequence to identify
-    # look in: phonebook.py
+
     sequence = []
     second_command_line_argument = sys.argv[2]
     with open(second_command_line_argument, "r") as file:
@@ -55,7 +55,7 @@ def main():
         # for 5 to 20 (5-9 and 10-20): if count == int(sys.argv[2])[0:1] and [0:2]
         if count == len(subsequences):
             print(name['name'])
-            # look in: exit.py
+
             sys.exit(0)
 
     # If there is no match
