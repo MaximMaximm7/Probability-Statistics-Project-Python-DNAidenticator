@@ -1,6 +1,4 @@
-# cd dna
-# python dna.py databases/small.csv sequences/1.txt    - numbers txt will be from 1 to 4
-# python dna.py databases/large.csv sequences/5.txt    - numbers txt will be from 5 to 20
+
 import csv
 import sys
 
